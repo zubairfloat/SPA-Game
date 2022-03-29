@@ -1,17 +1,41 @@
-import Header from '../components/Header'
-import Meta from '../components/Meta'
+import React from "react";
+import Feature from "../components/Feature";
 
 const Home = () => {
-  // page content
-  const pageTitle = 'Home'
-  const pageDescription = 'welcome to react bootstrap template'
-
   return (
-    <div>
-      <Meta title={pageTitle}/>
-      <Header head={pageTitle} description={pageDescription} />
-    </div>
-  )
-}
+    <div className="container-fluid">
+      <div className="py-4 row justify-content-evenly">
+        <div className="home-head-btn">
+          <h2>The Team</h2>
+        </div>
+        <div className="home-head-btn">
+          <h2>Whitepaper</h2>
+        </div>
+        <div className="home-head-btn">
+          <h2>Mint NFTs</h2>
+        </div>
+        <div className="home-head-btn">
+          <h2>HA$H</h2>
+        </div>
+        <div className="home-head-btn">
+          <h2>Marketplace</h2>
+        </div>
+      </div>
 
-export default Home
+      {/******** Game Features *********/}
+
+      <div className="hm-game">
+        <h2 className="home-h2 py-5">Game Features</h2>
+        <Feature />
+        <Feature />
+        <div className="d-flex justify-content-center py-5">
+          <button>Read the Whitepaper</button>
+        </div>
+      </div>
+
+      {/******** Road Map *********/}
+    </div>
+  );
+};
+
+export default Home;

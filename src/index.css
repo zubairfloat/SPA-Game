@@ -1,9 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-
-body {
-  font-family: 'Comfortaa', cursive;
-}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 
 main {
-  min-height: 80vh;
+  background: linear-gradient(180deg, #208f85 0%, #1f454a 43.23%, #14332d 100%);
+}
+
+.head-main-container {
+  float: left;
+  position: relative;
+  padding: 0px;
+}
+.head-btn button {
+  width: 181px;
+  height: 56px;
+  left: 939px;
+  top: 93px;
+  background: #264651;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.header-content {
+}
+
+.header-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-img {
+  position: relative;
+  width: 100%;
+}
+
+.head-con-row {
+  position: absolute;
+  top: 50%;
+}
+
+.head-icon {
+  background: #264651;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0px 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.header-content p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.header-content button {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 318px;
+  height: 56px;
+  background: #a94e3c;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.home-head-btn {
+  background: #264651;
+  border-radius: 10px;
+  width: 210px;
+  height: 101px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-head-btn h2 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #f8ad73 0%, #ea7351 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.home-h2 {
+  font-weight: 900;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #f8ad73 0%, #ea7351 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hm-game h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.hm-game button {
+  width: 295px;
+  height: 56px;
+  left: 573px;
+  top: 1961px;
+  background: #264651;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.feature-img-div {
+  width: 375px;
+  height: 232px;
+  background: #ffffff;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.feature-main h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.feature-main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 255, 255, 0.85);
 }
