@@ -7,8 +7,8 @@ const RoadMap = () => {
 
       <div className="container">
         <div className="row">
-          <div className="col-4">
-            <div></div>
+          <div className="roadmap-col col-4">
+            <div className="road-inner"></div>
             <div>
               <h4>Team Members</h4>
               <ul>

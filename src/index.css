@@ -178,3 +178,23 @@ main {
 
   color: rgba(255, 255, 255, 0.85);
 }
+
+.roadmap-col {
+  width: 418px;
+  height: 479px;
+  background: #ffffff;
+  opacity: 0.3;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.road-inner {
+  width: 354px;
+  height: 218px;
+  left: 299px;
+  top: 2235px;
+
+  background: #c4c4c4;
+  border-radius: 20px;
+}
