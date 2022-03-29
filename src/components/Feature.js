@@ -1,6 +1,4 @@
 import React from "react";
-import Frame1 from "../assets/images/frame1.jpg";
-import Frame2 from "../assets/images/frame2.jpg";
 
 const Feature = () => {
   return (

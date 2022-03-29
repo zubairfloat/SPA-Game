@@ -6,9 +6,6 @@ import Layout from "./layout/Layout";
 
 // pages
 import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
-import BackImage from "./assets/images/Union.svg";
 
 const App = () => {
   return (

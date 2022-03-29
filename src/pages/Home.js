@@ -1,5 +1,8 @@
 import React from "react";
 import Feature from "../components/Feature";
+import RoadMap from "../components/RoadMap";
+// import TeamsMember from "../components/TeamsMembers";
+// import Hash from "../components/Hash";
 
 const Home = () => {
   return (
@@ -34,6 +37,11 @@ const Home = () => {
       </div>
 
       {/******** Road Map *********/}
+      <RoadMap />
+      {/******** Teams Members *********/}
+      {/* <TeamsMember /> */}
+      {/******** Hash *********/}
+      {/* <Hash /> */}
     </div>
   );
 };

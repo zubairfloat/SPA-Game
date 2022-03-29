@@ -36,7 +36,7 @@ const Header = () => {
           </div>
         </div>
         <div className="header-content">
-          <div className=" head-con-row row d-flex justify-content-center">
+          <div className=" head-con-row d-flex justify-content-center">
             <div className="col-8">
               <h1>Grow Cannabis, Earn $HASH tokens, Buy Real Hemp Products</h1>
               <p>

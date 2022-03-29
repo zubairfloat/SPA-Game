@@ -41,7 +41,7 @@ main {
 
 .head-con-row {
   position: absolute;
-  top: 50%;
+  top: 40%;
 }
 
 .head-icon {
@@ -120,10 +120,8 @@ main {
 .home-h2 {
   font-weight: 900;
   line-height: 37px;
-  /* identical to box height */
-
+  text-align: center;
   text-transform: uppercase;
-
   background: linear-gradient(180deg, #f8ad73 0%, #ea7351 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,6 +131,17 @@ main {
 .hm-game h2 {
   font-size: 50px;
   text-align: center;
+}
+
+.heading-home {
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f8ad73 0%, #ea7351 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hm-game button {
@@ -180,21 +189,145 @@ main {
 }
 
 .roadmap-col {
-  width: 418px;
-  height: 479px;
-  background: #ffffff;
-  opacity: 0.3;
-  border: 1px solid #ffffff;
+  width: 330px;
+  height: 459px;
+  background: #639593;
   box-sizing: border-box;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 30px;
 }
 
 .road-inner {
-  width: 354px;
+  width: 266px;
   height: 218px;
-  left: 299px;
-  top: 2235px;
+  left: 47px;
+  top: 2857px;
 
   background: #c4c4c4;
   border-radius: 20px;
+}
+
+.road-map-content {
+  width: 330px;
+  padding: 15px 35px;
+}
+
+.road-map-content h4 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.road-map-content li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.teams-main h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.teams-main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.teams-content h2 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f8ad73 0%, #ea7351 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.teams-content h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.teams-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.teams-right-div {
+  margin-left: 50px;
+}
+
+.teams-left-div {
+  margin-right: 30px;
+}
+
+.main-footer {
+  background: #1a5a57;
+}
+
+.footer-icon-div {
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0px 10px;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.main-footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px 0px 0px 20px;
+}
+.hash-main p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #ffffff;
 }
