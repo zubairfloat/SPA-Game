@@ -2,7 +2,7 @@ import React from "react";
 
 const Hash = () => {
   return (
-    <div className="hash-main py-5">
+    <div className="hash-main py-5 d-none d-md-block">
       <h3 className="heading-home py-2">What is Hash?</h3>
       <div className="d-flex justify-content-center">
         <div className="col-6">

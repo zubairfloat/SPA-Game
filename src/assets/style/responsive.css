@@ -1,0 +1,27 @@
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1399px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+  .teams-left-div {
+    margin-left: 0px;
+  }
+}
+
+/*Small devices (landscape phones, 575px and down)*/
+@media (max-width: 575px) {
+  .teams-right-div {
+    margin: 0px !important;
+  }
+  .road-inner {
+    width: 200px !important;
+    height: 180px !important;
+  }
+}

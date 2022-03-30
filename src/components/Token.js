@@ -3,7 +3,7 @@ import { ReactComponent as HashLogo } from "../assets/images/HASH_HASHVILLE_LOGO
 
 const Token = () => {
   return (
-    <div className="token-main py-5">
+    <div className="token-main d-none d-md-block py-5">
       <div className="container py-5">
         <div className="d-flex">
           <div className="col-1"></div>

@@ -1,10 +1,13 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { ReactComponent as Logo } from "../assets/images/footer-logo.svg";
 
 const MobHeader = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Dice Roller</Navbar.Brand>
+      <Navbar.Brand href="#home">
+        <Logo />
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">

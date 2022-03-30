@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="main-footer py-4">
       <div className="container">
         <div className="row">
-          <div className="col-3">
+          <div className="col-3 ">
             <img src={Logo} alt="" />
             <p>© Copyright 2022 </p>
             <p>All Rights Reserved.</p>

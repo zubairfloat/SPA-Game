@@ -3,7 +3,7 @@ import Teams from "./Teams";
 
 const TeamsMember = () => {
   return (
-    <div className="container">
+    <div className="container d-none d-md-block">
       <h3 className="heading-home py-5">Team Members</h3>
       <Teams
         order={false}

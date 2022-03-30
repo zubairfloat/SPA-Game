@@ -39,12 +39,12 @@ const Header = () => {
           <div className=" head-con-row d-flex justify-content-center">
             <div className="col-8">
               <h1>Grow Cannabis, Earn $HASH tokens, Buy Real Hemp Products</h1>
-              <p>
+              <p className="pt-4">
                 Hashville is a decentralized play-to-earn game with unique NFTs,
                 real world utility for the $HASH tokens, and very fun gameplay
                 mechanics
               </p>
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center pt-0 pt-lg-5">
                 <button>Claim your Head Stash</button>
               </div>
             </div>

@@ -11,11 +11,17 @@ const Home = () => {
   const ref = useRef();
   useEventListener("scroll", () => {
     if (!ref.current) return;
-    ref.current.classList[window.scrollY > 700 ? "add" : "remove"]("is-sticky");
+    const { offsetTop } = ref.current;
+    ref.current.classList[window.scrollY > offsetTop ? "add" : "remove"](
+      "is-sticky"
+    );
   });
   return (
     <div className="container-fluid">
-      <div className="py-4 row justify-content-evenly" ref={ref}>
+      <div
+        className="d-none d-md-flex py-4 row justify-content-evenly"
+        ref={ref}
+      >
         <div
           className="home-head-btn"
           onClick={() => {

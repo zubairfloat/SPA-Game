@@ -4,7 +4,7 @@ import MetaImg from "../assets/images/meta.svg";
 
 const Meta = ({ title }) => {
   return (
-    <div id="mint" className="container">
+    <div id="mint" className="container d-none d-md-block">
       <div className="row">
         <div className="col">
           <img className="w-100" src={MetaImg} alt="meta" />

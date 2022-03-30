@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import MobHeader from "../components/MobHeader";
+import MobileHeadContent from "../components/HeadMobContent";
+import MobFooter from "../components/MobFooter";
 
 const Layout = ({ children }) => {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 620;
+  const breakpoint = 768;
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -15,9 +17,14 @@ const Layout = ({ children }) => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
+  const check = width < breakpoint;
+  console.log(check);
+
   return (
     <>
       {width < breakpoint ? <MobHeader /> : <Header />}
+      {check && <MobileHeadContent />}
+
       <main
         style={{
           backgroundRepeat: "no-repeat",
@@ -26,7 +33,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
-      {/* <Footer /> */}
+      {width < breakpoint ? <MobFooter /> : <Footer />}
     </>
   );
 };

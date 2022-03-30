@@ -41,7 +41,7 @@ main {
 
 .head-con-row {
   position: absolute;
-  top: 40%;
+  top: 36%;
 }
 
 .head-icon {
@@ -63,7 +63,7 @@ main {
 
 .header-content h1 {
   font-weight: bold;
-  font-size: 34px;
+  font-size: 3vw;
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ main {
 
 .header-content p {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.5vw;
   line-height: 25px;
   text-align: center;
 
@@ -95,7 +95,7 @@ main {
 .home-head-btn {
   background: #264651;
   border-radius: 10px;
-  width: 210px;
+  width: 15vw;
   height: 101px;
   display: flex;
   justify-content: center;
@@ -105,7 +105,7 @@ main {
 
 .home-head-btn h2 {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 1.5vw;
   line-height: 37px;
   /* identical to box height */
 
@@ -304,6 +304,7 @@ main {
   display: flex;
   margin: 0px 10px;
 }
+
 ul.no-bullets {
   list-style-type: none;
   margin: 0;
@@ -388,4 +389,43 @@ ul.no-bullets {
 .is-sticky .home-head-btn h2 {
   font-weight: 900;
   font-size: 16px;
+}
+
+.head-mob-cn-main {
+  background-color: rgba(40, 158, 144, 1);
+}
+
+.head-mob-cn-main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.head-mob-cn-main h3 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.head-mob-cn-main button {
+  background: #a94e3c;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 318px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.text-li-center li {
+  text-align: center;
 }
