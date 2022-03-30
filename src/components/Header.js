@@ -6,7 +6,7 @@ import FaceIcon from "../assets/images/Vector (2).svg";
 
 const Header = () => {
   return (
-    <div
+    <header
       className="head-main-container container-fluid"
       // style={{
       //   backgroundImage: `url(${Background})`,
@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

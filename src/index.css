@@ -100,6 +100,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .home-head-btn h2 {
@@ -330,4 +331,61 @@ ul.no-bullets {
   text-align: center;
 
   color: #ffffff;
+}
+
+.token-main {
+  background: #327875;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: 100px;
+  left: 50%;
+}
+
+.token-main p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+.token-main h3 {
+  text-align: start !important;
+}
+
+.token-main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.team-bar-div {
+  border-right: 1px solid white;
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  background: linear-gradient(180deg, #208f85 0%, #1f454a 43.23%, #14332d 100%);
+  /* animation: 500ms ease-in-out 0s normal none 1 running fadeInDown; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  transition: top 0.2s ease-in-out;
+}
+
+.is-sticky .home-head-btn {
+  width: 150px;
+  height: 75px;
+}
+
+.is-sticky .home-head-btn h2 {
+  font-weight: 900;
+  font-size: 16px;
 }

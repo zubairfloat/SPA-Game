@@ -1,23 +1,61 @@
-import React from "react";
+import React, { useRef } from "react";
 import Feature from "../components/Feature";
 import RoadMap from "../components/RoadMap";
-// import TeamsMember from "../components/TeamsMembers";
-// import Hash from "../components/Hash";
+import TeamsMember from "../components/TeamsMembers";
+import Hash from "../components/Hash";
+import Token from "../components/Token";
+import Meta from "../components/Meta";
+import useEventListener from "../hooks/useEventListener";
 
 const Home = () => {
+  const ref = useRef();
+  useEventListener("scroll", () => {
+    if (!ref.current) return;
+    ref.current.classList[window.scrollY > 700 ? "add" : "remove"]("is-sticky");
+  });
   return (
     <div className="container-fluid">
-      <div className="py-4 row justify-content-evenly">
-        <div className="home-head-btn">
+      <div className="py-4 row justify-content-evenly" ref={ref}>
+        <div
+          className="home-head-btn"
+          onClick={() => {
+            setTimeout(() => {
+              document.getElementById("the-team").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }, 50);
+          }}
+        >
           <h2>The Team</h2>
         </div>
         <div className="home-head-btn">
           <h2>Whitepaper</h2>
         </div>
-        <div className="home-head-btn">
+        <div
+          className="home-head-btn"
+          onClick={() => {
+            setTimeout(() => {
+              document.getElementById("mint").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }, 50);
+          }}
+        >
           <h2>Mint NFTs</h2>
         </div>
-        <div className="home-head-btn">
+        <div
+          className="home-head-btn"
+          onClick={() => {
+            setTimeout(() => {
+              document.getElementById("hash").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }, 50);
+          }}
+        >
           <h2>HA$H</h2>
         </div>
         <div className="home-head-btn">
@@ -38,10 +76,16 @@ const Home = () => {
 
       {/******** Road Map *********/}
       <RoadMap />
+
       {/******** Teams Members *********/}
-      {/* <TeamsMember /> */}
+      {/* <div id="the-team"></div> */}
+      <TeamsMember />
+
+      <Meta />
+      {/******** Token *********/}
+      <Token />
       {/******** Hash *********/}
-      {/* <Hash /> */}
+      <Hash />
     </div>
   );
 };

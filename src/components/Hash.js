@@ -2,9 +2,9 @@ import React from "react";
 
 const Hash = () => {
   return (
-    <div className="hash-main">
+    <div className="hash-main py-5">
       <h3 className="heading-home py-2">What is Hash?</h3>
-      <div className="d-flex pb-5 justify-content-center">
+      <div className="d-flex justify-content-center">
         <div className="col-6">
           <p>
             The HASH token is a token uniquely designed for the Hashville game,

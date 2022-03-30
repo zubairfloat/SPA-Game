@@ -2,37 +2,31 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MobHeader from "../components/MobHeader";
-import BackImg from "../assets/images/background.svg";
 
 const Layout = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 620;
 
-  const handleResize = () => {
-    if (window.innerWidth < 720) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+  React.useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
 
-  console.log(isMobile);
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
     <>
-      {isMobile ? <MobHeader /> : <Header />}
+      {width < breakpoint ? <MobHeader /> : <Header />}
       <main
         style={{
-          backgroundImage: `url(${BackImg})`,
-
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
         }}
       >
         {children}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

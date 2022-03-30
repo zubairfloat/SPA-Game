@@ -26,12 +26,14 @@ const RoadMap = () => {
                 <li>Blind Box Releases</li>
                 <li>HA$H Token Launch</li>
                 <li>Website Launch</li>
-                <li>Discord Community Setup</li>
+                <li id="the-team">Discord Community Setup</li>
               </ul>
+              <div></div>
             </div>
           </div>
         </div>
       </div>
+      <div></div>
     </div>
   );
 };
