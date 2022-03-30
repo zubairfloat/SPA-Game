@@ -5,7 +5,7 @@ const Token = () => {
   return (
     <div className="token-main d-none d-md-block py-5">
       <div className="container py-5">
-        <div className="d-flex">
+        <div className="row d-flex">
           <div className="col-1"></div>
           <div className="col-6">
             <h3 className="heading-home ">HASH Token</h3>

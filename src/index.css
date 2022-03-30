@@ -336,11 +336,11 @@ ul.no-bullets {
 
 .token-main {
   background: #327875;
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
+  width: 100%;
   margin-top: 100px;
-  left: 50%;
+  /* position: relative;
+  margin-left: -50vw;
+  left: 50%; */
 }
 
 .token-main p {
@@ -379,6 +379,7 @@ ul.no-bullets {
   padding-top: 0px;
   padding-bottom: 0px;
   transition: top 0.2s ease-in-out;
+  margin: 0px;
 }
 
 .is-sticky .home-head-btn {
@@ -428,4 +429,40 @@ ul.no-bullets {
 
 .text-li-center li {
   text-align: center;
+}
+
+.mob-nav-btn {
+  background: #70ceea;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+.mob-nav-btn button {
+  width: 156px;
+  height: 44px;
+  left: 189px;
+  top: 16px;
+  background: #264651;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-head-btn {
+}
+
+.nav-head-btn button {
+  width: 132px;
+  height: 55px;
+  left: 113px;
+  top: 109px;
+
+  background: #264651;
+  border-radius: 10px;
 }

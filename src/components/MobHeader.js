@@ -11,6 +11,22 @@ const MobHeader = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
+          {/* <div className="mob-nav-btn">
+            <Nav.Link href="#features">
+              <button>Play Game</button>
+            </Nav.Link>
+            <Nav.Link href="#features">
+              <button>Stake Land</button>
+            </Nav.Link>
+          </div>
+          <div className="nav-head-btn">
+            <Nav.Link href="#features">
+              <button>Play Game</button>
+            </Nav.Link>
+            <Nav.Link href="#features">
+              <button>Stake Land</button>
+            </Nav.Link>
+          </div> */}
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
           <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
