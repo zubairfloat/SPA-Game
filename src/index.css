@@ -9,6 +9,11 @@ main {
   position: relative;
   padding: 0px;
 }
+.button-div-head {
+  top: -90px;
+  position: relative;
+  height: 90px;
+}
 .head-btn button {
   width: 181px;
   height: 56px;
@@ -99,6 +104,35 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.home-head-btn:hover {
+  background-color: rgb(238, 131, 90);
+  color: rgb(38, 70, 81);
+  text-decoration: none;
+  /* transition: 0.1s all ease;
+  -webkit-transition: 0.3s all ease; */
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px,
+    rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+
+.home-head-btn:hover h2 {
+  font-weight: 900;
+  font-size: 1.5vw;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+  -webkit-text-stroke: 0px rgb(38, 70, 81) !important;
+  background: linear-gradient(180deg, rgb(38, 70, 81) 0%, rgb(38, 70, 81) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .border-select {
@@ -112,7 +146,7 @@ main {
   /* identical to box height */
 
   text-transform: uppercase;
-
+  -webkit-text-stroke: 1px rgb(169, 78, 60);
   background: linear-gradient(180deg, #f8ad73 0%, #ea7351 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -145,6 +179,7 @@ main {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-decoration: transparent;
+  -webkit-text-stroke: 2px rgb(169, 78, 60);
 }
 
 .hm-game button {
@@ -377,24 +412,24 @@ ul.no-bullets {
   width: 100%;
   z-index: 999;
   box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
-  background: linear-gradient(180deg, #208f85 0%, #1f454a 43.23%, #14332d 100%);
+  background-color: #289e90;
   /* animation: 500ms ease-in-out 0s normal none 1 running fadeInDown; */
   padding-top: 0px;
   padding-bottom: 0px;
-  transition: 0.3s all ease;
+  transition: 0.1s all ease;
   -webkit-transition: 0.3s all ease;
   margin: 0px;
 }
 
-.is-sticky .home-head-btn {
+/* .is-sticky .home-head-btn {
   width: 140px;
-  height: 65px;
+  height: 85px;
 }
 
 .is-sticky .home-head-btn h2 {
   font-weight: 900;
   font-size: 16px;
-}
+} */
 
 .head-mob-cn-main {
   background-color: rgba(40, 158, 144, 1);

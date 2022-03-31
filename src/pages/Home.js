@@ -7,6 +7,7 @@ import Token from "../components/Token";
 import Meta from "../components/Meta";
 import useEventListener from "../hooks/useEventListener";
 import { useInView } from "react-intersection-observer";
+import ButtonBack from "../assets/images/arc.png";
 
 const ListBtn = [
   { id: 1, lable: "The Team", scroll: "the-team", active: false },
@@ -67,9 +68,19 @@ const Home = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div>
       <div
-        className="d-none d-md-flex py-3 row justify-content-evenly"
+        className={`${
+          sticy
+            ? "d-none d-md-flex py-3 row justify-content-evenly"
+            : "button-div-head d-none d-md-flex py-3 row justify-content-evenly"
+        }`}
+        style={{
+          backgroundImage: `${!sticy ? `url(${ButtonBack})` : ""}`,
+
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+        }}
         ref={ref}
       >
         {btnState?.map((item) => {
@@ -85,31 +96,32 @@ const Home = () => {
           );
         })}
       </div>
+      <div className="container-fluid">
+        {/******** Game Features *********/}
 
-      {/******** Game Features *********/}
-
-      <div className={`hm-game ${sticy ? "pt-5" : ""}`} ref={sectionRef}>
-        <h2 className={`heading-home py-5 `}>Game Features</h2>
-        <Feature />
-        <Feature />
-        <div className="d-flex justify-content-center py-5">
-          <button id="game">Read the Whitepaper</button>
+        <div className={`hm-game ${sticy ? "pt-5" : ""}`} ref={sectionRef}>
+          <h2 className={`heading-home pb-5 `}>Game Features</h2>
+          <Feature />
+          <Feature />
+          <div className="d-flex justify-content-center py-5">
+            <button id="game">Read the Whitepaper</button>
+          </div>
+          <div></div>
         </div>
-        <div></div>
+
+        {/******** Road Map *********/}
+        <RoadMap />
+
+        {/******** Teams Members *********/}
+        {/* <div id="the-team"></div> */}
+        <TeamsMember />
+
+        <Meta />
+        {/******** Token *********/}
+        <Token />
+        {/******** Hash *********/}
+        <Hash />
       </div>
-
-      {/******** Road Map *********/}
-      <RoadMap />
-
-      {/******** Teams Members *********/}
-      {/* <div id="the-team"></div> */}
-      <TeamsMember />
-
-      <Meta />
-      {/******** Token *********/}
-      <Token />
-      {/******** Hash *********/}
-      <Hash />
     </div>
   );
 };
