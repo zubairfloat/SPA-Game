@@ -12,6 +12,7 @@ const Home = () => {
   useEventListener("scroll", () => {
     if (!ref.current) return;
     const { offsetTop } = ref.current;
+    console.log(window.scrollY, offsetTop);
     ref.current.classList[window.scrollY > offsetTop ? "add" : "remove"](
       "is-sticky"
     );
@@ -19,7 +20,7 @@ const Home = () => {
   return (
     <div className="container-fluid">
       <div
-        className="d-none d-md-flex py-4 row justify-content-evenly"
+        className="d-none d-md-flex py-3 row justify-content-evenly"
         ref={ref}
       >
         <div

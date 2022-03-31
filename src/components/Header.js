@@ -1,9 +1,6 @@
 import React from "react";
 import Background from "../assets/images/back.jpg";
-import Mask from "../assets/images/Vector (1).svg";
-import Twitter from "../assets/images/Vector.svg";
-import FaceIcon from "../assets/images/Vector (2).svg";
-
+import SocialIcons from "../components/SocialIcons";
 const Header = () => {
   return (
     <header
@@ -19,17 +16,7 @@ const Header = () => {
       <img className="header-img" src={Background} alt="img" />
       <div>
         <div className="header-head d-flex justify-content-between py-3 px-5">
-          <div className="d-flex justify-content-center align-items-center">
-            <div className="head-icon">
-              <img src={Mask} alt="" />
-            </div>
-            <div className="head-icon">
-              <img src={Twitter} alt="" />
-            </div>
-            <div className="head-icon">
-              <img src={FaceIcon} alt="" />
-            </div>
-          </div>
+          <SocialIcons />
           <div className="head-btn">
             <button className="mx-2">Play Game</button>
             <button className="mx-2">Stake Land</button>

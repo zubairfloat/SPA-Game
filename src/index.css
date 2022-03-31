@@ -383,8 +383,8 @@ ul.no-bullets {
 }
 
 .is-sticky .home-head-btn {
-  width: 150px;
-  height: 75px;
+  width: 140px;
+  height: 65px;
 }
 
 .is-sticky .home-head-btn h2 {
@@ -431,6 +431,13 @@ ul.no-bullets {
   text-align: center;
 }
 
+.nav-head-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mob-nav-btn {
   background: #70ceea;
   display: flex;
@@ -454,15 +461,100 @@ ul.no-bullets {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.nav-head-btn {
-}
-
-.nav-head-btn button {
-  width: 132px;
+.head-mob-btn {
+  width: 171px;
   height: 55px;
-  left: 113px;
-  top: 109px;
-
   background: #264651;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-mob-btn h3 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f8ad73 0%, #ea7351 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.meta-mask-app {
+  width: 35vw;
+  height: 501px;
+  background: #628284;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px 100px 0px;
+}
+
+.meta-mask-app img {
+  width: 31vw;
+  height: 38vh;
+}
+.meta-mask-app p {
+  margin: 20px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.meta-right-lines {
+  display: flex;
+  margin: 120px 0px 20px 0px;
+}
+
+.meta-mask-vaullet {
+  width: 35vw;
+  height: 551px;
+  background: #628284;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meta-mask-vaullet img {
+  width: 31vw;
+  height: 38vh;
+}
+
+.meta-mask-vaullet button {
+  width: 21vw;
+  height: 56px;
+  left: 912px;
+  top: 5213px;
+  background: #ee835a;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  border: 0px;
+}
+.meta-mask-vaullet p {
+  margin: 20px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
 }

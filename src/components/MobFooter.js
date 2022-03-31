@@ -6,7 +6,7 @@ import { ReactComponent as Twitter } from "../assets/images/footer/twitter.svg";
 
 const MobFooter = () => {
   return (
-    <div className="container d-flex flex-column justify-content-center main-footer align-items-center py-4">
+    <div className="container-fluid d-flex flex-column justify-content-center main-footer align-items-center py-4">
       <img src={Logo} alt="" />
       <div className="col-4 pt-3">
         <div className="d-flex justify-content-center">
