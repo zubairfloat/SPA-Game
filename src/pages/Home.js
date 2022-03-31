@@ -13,7 +13,7 @@ const ListBtn = [
   {
     id: 2,
     lable: "Whitepaper",
-    scroll: "n",
+    scroll: "game",
     active: false,
   },
   { id: 3, lable: "Mint NFTs", scroll: "mint", active: false },
@@ -21,7 +21,7 @@ const ListBtn = [
   {
     id: 5,
     lable: "Marketplace",
-    scroll: "hash",
+    scroll: "sss",
     active: false,
   },
 ];
@@ -29,20 +29,27 @@ const Home = () => {
   const ref = useRef();
   const [btnState, setBtnState] = useState(ListBtn);
   const [sectionRef, inView] = useInView();
+  const [sticy, setSticky] = useState();
+  const [offSet, setOffSet] = useState();
   // const [sectionRef2, inView2] = useInView();
   useEventListener("scroll", () => {
     if (!ref.current) return;
     const { offsetTop } = ref.current;
-
-    ref.current.classList[window.scrollY > offsetTop ? "add" : "remove"](
-      "is-sticky"
-    );
+    if (offsetTop !== 0) {
+      setOffSet(offsetTop);
+      setSticky(window.scrollY > offsetTop);
+      ref.current.classList[window.scrollY > offsetTop ? "add" : "remove"](
+        "is-sticky"
+      );
+    } else {
+      ref.current.classList[offSet > window.scrollY ? "remove" : "add"](
+        "is-sticky"
+      );
+    }
   });
-
+  console.log({ inView });
   const handleClick = (item) => {
-    console.log(item);
     let newList = btnState.map((elem) => {
-      console.log(item.id);
       if (elem.id === item.id) {
         elem.active = true;
       } else {
@@ -59,7 +66,6 @@ const Home = () => {
     }, 50);
   };
 
-  console.log({ inView });
   return (
     <div className="container-fluid">
       <div
@@ -67,7 +73,6 @@ const Home = () => {
         ref={ref}
       >
         {btnState?.map((item) => {
-          console.log(item.scroll);
           return (
             <div
               className={`home-head-btn ${item.active ? "border-select" : ""}`}
@@ -83,13 +88,14 @@ const Home = () => {
 
       {/******** Game Features *********/}
 
-      <div className="hm-game" ref={sectionRef}>
-        <h2 className="heading-home py-5">Game Features</h2>
+      <div className={`hm-game ${sticy ? "pt-5" : ""}`} ref={sectionRef}>
+        <h2 className={`heading-home py-5 `}>Game Features</h2>
         <Feature />
         <Feature />
         <div className="d-flex justify-content-center py-5">
-          <button>Read the Whitepaper</button>
+          <button id="game">Read the Whitepaper</button>
         </div>
+        <div></div>
       </div>
 
       {/******** Road Map *********/}

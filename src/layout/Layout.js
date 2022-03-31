@@ -18,7 +18,6 @@ const Layout = ({ children }) => {
   }, []);
 
   const check = width < breakpoint;
-  console.log(check);
 
   return (
     <>
