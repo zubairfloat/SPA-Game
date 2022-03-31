@@ -16,6 +16,7 @@ main {
   top: 93px;
   background: #264651;
   border-radius: 8px;
+  border: 0px;
   font-weight: 900;
   font-size: 18px;
   line-height: 25px;
@@ -23,10 +24,6 @@ main {
 
   color: rgba(255, 255, 255, 0.85);
 }
-
-.header-content {
-}
-
 .header-head {
   position: absolute;
   top: 0;
@@ -90,6 +87,7 @@ main {
   background: #a94e3c;
   border-radius: 8px;
   color: rgba(255, 255, 255, 0.85);
+  border: 0px;
 }
 
 .home-head-btn {
@@ -101,6 +99,10 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.border-select {
+  border: 5px solid #ee835a !important;
 }
 
 .home-head-btn h2 {
@@ -115,7 +117,6 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .home-h2 {
@@ -143,6 +144,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-decoration: transparent;
 }
 
 .hm-game button {
@@ -157,6 +159,7 @@ main {
   line-height: 25px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.85);
+  border: 0px;
 }
 
 .feature-img-div {
