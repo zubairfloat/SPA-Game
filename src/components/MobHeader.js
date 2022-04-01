@@ -1,10 +1,17 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { ReactComponent as Logo } from "../assets/images/footer-logo.svg";
+import SocialIcons from "./SocialIcons";
 
 const MobHeader = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar
+      className="px-1"
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+    >
       <Navbar.Brand href="#home">
         <Logo />
       </Navbar.Brand>
@@ -45,6 +52,12 @@ const MobHeader = () => {
                 <h3>Marketplace</h3>
               </div>
             </Nav.Link>
+          </div>
+          <div className="border-head px-4">
+            <div className="border-mob-head"></div>
+          </div>
+          <div className="head-social-icons">
+            <SocialIcons />
           </div>
           {/* <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
