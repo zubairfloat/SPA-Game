@@ -26,8 +26,17 @@ main {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-
+  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
   color: rgba(255, 255, 255, 0.85);
+}
+
+.head-btn button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(38, 70, 81);
 }
 .header-head {
   position: absolute;
@@ -93,6 +102,16 @@ main {
   border-radius: 8px;
   color: rgba(255, 255, 255, 0.85);
   border: 0px;
+  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.header-content button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(169, 78, 60);
 }
 
 .home-head-btn {
@@ -195,6 +214,16 @@ main {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.85);
   border: 0px;
+  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.hm-game button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(38, 70, 81);
 }
 
 .feature-img-div {
@@ -303,6 +332,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  /* -webkit-text-stroke: 1px rgb(169, 78, 60); */
 }
 .teams-content h3 {
   font-weight: 700;
@@ -586,6 +616,16 @@ ul.no-bullets {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.85);
   border: 0px;
+  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.meta-mask-vaullet button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(238, 131, 90);
 }
 .meta-mask-vaullet p {
   margin: 20px 0px;
